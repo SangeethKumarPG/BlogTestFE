@@ -15,12 +15,37 @@
                 <li><a href = "#">HOME</a></li>
                 <li><a href = "#">ABOUT</a></li>
                 <li><a href = "#">CONTACT</a></li>
+               
+        
+    </nav>
             </ul>
+            
         </nav>
     </header>
 
     <main class="main-content">
 
+      
+    <button id="openModalBtn">EDIT</button>
+
+    
+    <div id="editModal" class="edit-modal">
+        <div class="edit-form">
+            <h3>Edit Post</h3>
+
+          
+            <input id="editId" placeholder="Post ID">
+
+            <input id="editTitle" placeholder="Post Title">
+            <textarea id="editContent" placeholder="Post Content"></textarea>
+
+            <div class="edit-actions">
+                <button id="updateBtn">Update</button>
+                <button id="cancelEdit">Cancel</button>
+            </div>
+        </div>
+    </div>
+       
     </main>
 
     <footer class="footer-links">
@@ -30,5 +55,6 @@
                 <li><a href = "#">CONTACT</a></li>
             </ul>
     </footer>
+    <script src="put.js"></script>
 </body>
 </html>
