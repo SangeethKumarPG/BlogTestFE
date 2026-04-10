@@ -21,7 +21,22 @@
 
     <main class="main-content">
 
+
+<button class="post-modal__openbtn" id="addPostBtn">New Post</button>
+<div id="postModal" class="post-modal">
+    <div class="post-modal__form">
+        <h3>Create New Post</h3>
+        <input class="post-modal__title" id="postTitleInput" placeholder="Post Title">
+        <textarea class="post-modal__content" id="postContentInput" placeholder="Post Content" rows="4"></textarea>
+        <div class="post-modal__actions">
+            <button class="post-modal__createbtn" id="createPostBtn">Create</button>
+            <button class="post-modal__closebtn" id="closePostModal">Cancel</button>
+        </div>
+    </div>
+</div>
+            
     </main>
+  
 
     <footer class="footer-links">
          <ul>
@@ -30,5 +45,6 @@
                 <li><a href = "#">CONTACT</a></li>
             </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
-</html>
+</html>       
