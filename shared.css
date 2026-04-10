@@ -65,6 +65,23 @@ body{
     color: black;
 }
 
+.post-modal__openbtn{
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    margin:50px 50px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.post-modal__openbtn:hover{
+ color: aquamarine;
+}
+.main-content{
+    text-align: center;
+}
+.post-modal {
 .main-content button{
     background-color:rgb(247, 71, 71);
     margin:50px 50px;
@@ -81,6 +98,69 @@ body{
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+.post-modal.active { 
+    display: flex;
+ }
+
+.post-modal__form {
+    background:#cce1f0;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 450px;
+    width: 90%;
+    color: black;
+    text-shadow:3px 3px 8px rgba(252, 252, 252, 0.6);
+}
+
+.post-modal__title, .post-modal__content {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.post-modal__title:hover{
+    border-color: #3498db;
+}
+.post-modal__content:hover{
+ border-color: #3498db;   
+}
+.post-modal__title {
+    font-size: 16px;
+}
+.post-modal__content { 
+    resize: none;
+    min-height: 100px; 
+    font-size: 16px;
+}
+.post-modal__actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+.post-modal__createbtn {
+    background: #05723c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.post-modal__closebtn {
+    background: #6e6d6d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
     background: rgba(0,0,0,0.6);
     z-index: 1001;
     justify-content: center;
