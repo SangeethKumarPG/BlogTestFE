@@ -1,0 +1,184 @@
+.post-modal__openbtn {
+    background: hsl(240, 90%, 50%);
+    margin: 3.125rem 3.125rem;
+    color: white;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    
+}
+
+.post-modal__openbtn:hover {
+    background: hsl(240, 90%, 20%);
+}
+
+.post-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 1001;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-modal.active { 
+    display: flex;
+}
+
+.post-modal__form {
+    background: #cce1f0;
+    padding: 1.5625rem;
+    border-radius: 0.625rem;
+    max-width: 28.125rem;
+    width: 90%;
+    color: black;
+    text-shadow: 0.1875rem 0.1875rem 0.5rem rgba(252, 252, 252, 0.6);
+}
+
+.post-modal__title,
+.post-modal__content {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.3125rem;
+    box-sizing: border-box;
+}
+
+.post-modal__title:hover,
+.post-modal__content:hover {
+    border-color: #3498db;
+}
+
+.post-modal__title {
+    font-size: 1rem;
+}
+
+.post-modal__content { 
+    resize: none;
+    min-height: 6.25rem; 
+    font-size: 1rem;
+}
+
+.post-modal__actions {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    margin-top: 0.9375rem;
+}
+
+.post-modal__createbtn,
+.post-modal__closebtn {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 1.25rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    width: 7.5rem;
+    text-align: center;
+}
+
+.edit-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 62.4375rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-modal.active {
+    display: flex;
+}
+
+.edit-form {
+    background: rgb(166, 208, 235);
+    padding: 1.875rem;
+    border-radius: 0.75rem;
+    max-width: 31.25rem;
+    width: 90%;
+    box-shadow: 0 0.9375rem 2.1875rem rgba(0, 0, 0, 0.3);
+}
+
+.edit-form input,
+.edit-form textarea {
+    width: 100%;
+    padding: 0.875rem;
+    margin: 0.75rem 0;
+    border: 0.125rem solid #e1e5e9;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.edit-form textarea {
+    min-height: 7.5rem;
+    resize: vertical;
+}
+
+.edit-actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-top: 1.25rem;
+}
+
+#updateBtn {
+    background: #44ec06;
+    color: white;
+    border: none;
+    padding: 0.875rem 1.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#cancelEdit {
+    background: #f31212;
+    color: white;
+    border: none;
+    padding: 0.875rem 1.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background: hsl(131, 55%, 50%);
+    margin: 3.125rem 3.125rem;
+    color: white;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    
+}
+.edit-btn:hover{
+    background: hsl(131, 55%, 20%);
+}
+.delete-btn {
+    background: hsl(6, 78%, 50%);  
+    margin: 3.125rem 3.125rem;
+    color: white;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.delete-btn:hover{
+    background: hsl(6, 78%, 20%);
+}
