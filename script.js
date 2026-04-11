@@ -126,3 +126,47 @@ editModal.onclick = (e) => {
         editModal.classList.remove('active');
     }
 };
+
+/*function to get api*/
+
+
+document.getElementById("getBlogsBtn").addEventListener("click", getBlogs);
+
+async function getBlogs() {
+  try {
+    const response = await fetch(APIURL);
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const blogs = await response.json();
+
+    const container = document.getElementById("blogContainer");
+
+    // ✅ ONLY clear blog area (NOT whole page)
+    container.innerHTML = "";
+
+    blogs.forEach(blog => {
+      const blogDiv = document.createElement("div");
+      blogDiv.classList.add("blog-post");
+
+      blogDiv.innerHTML = `
+        <p><strong>ID:${blog.id} </strong>
+        ${blog.title}</p>
+        <p>${blog.content}</p>
+      `;
+
+      container.appendChild(blogDiv);
+    });
+
+  } catch (error) {
+    console.error("Error loading blogs:", error);
+
+    document.getElementById("blogContainer").innerHTML =
+      "<p>Failed to load blogs.</p>";
+  }
+}
+
+// Load blogs when page loads
+// window.addEventListener("DOMContentLoaded", getBlogs);
